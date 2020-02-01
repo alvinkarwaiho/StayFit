@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         weightlifting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cardio();
+               weightlifting();
             }
         });
         features.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cardio();
+                features();
             }
         });
 
