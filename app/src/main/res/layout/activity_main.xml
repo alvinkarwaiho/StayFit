@@ -11,27 +11,30 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
     <ImageButton
-        android:layout_width="600dp"
+        android:layout_width="match_parent"
         android:layout_height="135dp"
         android:id="@+id/cardio1"
         android:background="@drawable/curv_button"
+        android:src="@drawable/cardio"
         android:layout_marginBottom="10dp"
 
         />
 
     <ImageButton
-        android:layout_width="600dp"
+        android:layout_width="match_parent"
         android:layout_height="135dp"
         android:id="@+id/weightlifting2"
         android:background="@drawable/curv_button"
+        android:src="@drawable/weightlifting"
         android:layout_marginBottom="10dp"
 
         />
     <ImageButton
-        android:layout_width="600dp"
+        android:layout_width="match_parent"
         android:layout_height="135dp"
         android:id="@+id/features"
         android:background="@drawable/curv_button"
+        android:src="@drawable/plus"
         android:layout_marginBottom="10dp"
         />
     </LinearLayout>

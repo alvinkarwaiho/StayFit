@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Features"></activity>
-        <activity android:name=".Cardio" />
-        <activity android:name=".Weightlifting" />
+        <activity android:name=".Features" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".Cardio"   android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Weightlifting" android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

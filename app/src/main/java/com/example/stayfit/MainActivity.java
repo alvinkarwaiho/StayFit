@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Intent intent = new Intent (this, MainActivity.class);
 
         cardio =(ImageButton) findViewById(R.id.cardio1);
         weightlifting = (ImageButton) findViewById(R.id.weightlifting2);
