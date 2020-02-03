@@ -12,7 +12,7 @@
         android:orientation="vertical">
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="135dp"
+        android:layout_height="140dp"
         android:id="@+id/cardio1"
         android:background="@drawable/curv_button"
         android:src="@drawable/cardio"
@@ -22,7 +22,7 @@
 
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="135dp"
+        android:layout_height="140dp"
         android:id="@+id/weightlifting2"
         android:background="@drawable/curv_button"
         android:src="@drawable/weightlifting"
@@ -31,7 +31,7 @@
         />
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="135dp"
+        android:layout_height="140dp"
         android:id="@+id/features"
         android:background="@drawable/curv_button"
         android:src="@drawable/plus"

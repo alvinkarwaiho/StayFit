@@ -6,8 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".Weightlifting">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="weightlifting"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:id="@+id/tricep"
+                android:text="Tricep"
+                android:background="@drawable/curv_button"
+                android:layout_marginBottom="10dp"
+                />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:id="@+id/bicep"
+                android:background="@drawable/curv_button"
+                android:layout_marginBottom="10dp"
+                />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:id="@+id/leg"
+                android:background="@drawable/curv_button"
+                android:layout_marginBottom="10dp"
+                />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:id="@+id/chest"
+                android:background="@drawable/curv_button"
+                android:layout_marginBottom="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

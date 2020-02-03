@@ -6,7 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".Cardio">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/treadmill"
+        android:background="@drawable/curv_button"
+            android:layout_marginBottom="10dp"
+        />
 
-
-
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/bike"
+            android:background="@drawable/curv_button"
+            android:layout_marginBottom="10dp"
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/rowing"
+            android:background="@drawable/curv_button"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
