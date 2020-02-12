@@ -13,5 +13,6 @@ public class Weightlifting extends AppCompatActivity {
         setContentView(R.layout.activity_weightlifting);
 
 
+
     }
 }
