@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 public class Cardio extends AppCompatActivity {
-ImageView back ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

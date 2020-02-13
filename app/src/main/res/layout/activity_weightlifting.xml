@@ -23,28 +23,22 @@
                 android:layout_marginBottom="10dp"
                 />
 
-            <ImageButton
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                android:id="@+id/bicep"
+                android:id="@+id/chest"
                 android:text="Chest"
                 android:background="@drawable/curv_button"
                 android:layout_marginBottom="10dp"
                 />
-            <ImageButton
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:id="@+id/leg"
                 android:background="@drawable/curv_button"
                 android:layout_marginBottom="10dp"
                 />
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:id="@+id/chest"
-                android:background="@drawable/curv_button"
-                android:layout_marginBottom="10dp"
-                />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
