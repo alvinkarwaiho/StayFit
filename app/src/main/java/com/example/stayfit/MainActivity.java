@@ -5,21 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageButton cardio;
-    private ImageButton weightlifting;
-    private ImageButton features;
+    private Button cardio;
+    private Button weightlifting;
+    private Button features;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent intent = new Intent (this, MainActivity.class);
 
-        cardio =(ImageButton) findViewById(R.id.cardio1);
-        weightlifting = (ImageButton) findViewById(R.id.weightlifting2);
-        features = (ImageButton) findViewById(R.id.features);
+        cardio =(Button) findViewById(R.id.cardio1);
+        weightlifting = (Button) findViewById(R.id.weightlifting2);
+        features = (Button) findViewById(R.id.features);
 
         cardio.setOnClickListener(new View.OnClickListener() {
             @Override

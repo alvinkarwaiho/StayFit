@@ -9,8 +9,9 @@
 
     <TextView
         android:id="@+id/msgTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="300sp"
         android:text="TextView"
         android:textSize="40sp" />
 
@@ -19,6 +20,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10sp"
-        android:layout_marginTop="60sp"
+        android:layout_marginTop="360sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/information1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="420sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/information2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="480sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/information3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="540sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/information4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="600sp"
         android:text="TextView" />
 </RelativeLayout>

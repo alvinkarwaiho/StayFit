@@ -10,31 +10,45 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:id="@+id/cardio1"
-        android:layout_marginBottom="10dp"
 
-        />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/fitness" />
 
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:id="@+id/weightlifting2"
+        <Button
+            android:id="@+id/cardio1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape"
 
-        android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/cardio"
+            android:text="Cardio"
+            android:textSize="20sp" />
 
-        />
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:id="@+id/features"
-        android:layout_marginBottom="10dp"
-        />
+        <Button
+            android:id="@+id/weightlifting2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape"
+
+            android:drawableLeft="@drawable/weightlifting"
+            android:text="Weightlifting"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/features"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_shape"
+            android:drawableLeft="@drawable/additional"
+            android:text="Features"
+            android:textSize="20sp" />
     </LinearLayout>
-
-
 
 
 </RelativeLayout>

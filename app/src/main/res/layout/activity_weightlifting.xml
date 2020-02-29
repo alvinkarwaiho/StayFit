@@ -19,22 +19,24 @@
                 android:layout_height="140dp"
                 android:id="@+id/tricep"
                 android:text="Tricep"
-
+                android:background="@drawable/button_shape"
                 android:layout_marginBottom="10dp"
                 />
 
             <Button
+                android:id="@+id/chest"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                android:id="@+id/chest"
-                android:text="Chest"
-
                 android:layout_marginBottom="10dp"
-                />
+                android:background="@drawable/button_shape"
+                android:drawableLeft="@drawable/chest"
+                android:text="Chest" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:id="@+id/leg"
+                android:background="@drawable/button_shape"
                 android:layout_marginBottom="10dp"
                 />
 

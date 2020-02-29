@@ -14,24 +14,26 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
-        <ImageButton
+        <Button
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:id="@+id/treadmill"
+            android:background="@drawable/button_shape"
             android:layout_marginBottom="10dp"
         />
 
-        <ImageButton
+        <Button
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:id="@+id/bike"
+            android:background="@drawable/button_shape"
             android:layout_marginBottom="10dp"
             />
-        <ImageButton
+        <Button
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:id="@+id/rowing"
-         
+            android:background="@drawable/button_shape"
             android:layout_marginBottom="10dp"
             />
     </LinearLayout>
