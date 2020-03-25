@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Treadmill"></activity>
+        <activity
+            android:name=".Caloriecounter"
+            android:parentActivityName=".Features" />
+
+        <activity android:name=".Stepcounter"
+            android:parentActivityName=".Features" />
+        <activity
+            android:name=".Treadmill"
+            android:parentActivityName=".Cardio" />
         <activity
             android:name=".Squats"
             android:parentActivityName=".Weightlifting" />

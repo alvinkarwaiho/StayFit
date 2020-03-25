@@ -1,9 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Treadmill">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/msgTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250sp"
+                android:text="Treadmill"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/treadmill_Step1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 1)"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/treadmill_Step2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:text="Step2)"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/treadmill_Step3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70sp"
+                android:text="Step3)"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/treadmill_Step4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:paddingTop="10sp"
+                android:text="Step4)"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/treadmill_Step5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50sp"
+                android:paddingTop="10sp"
+                android:text="Step5)"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/treadmill_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-372sp"
+                android:paddingBottom="30sp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/treadmill_information1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="5sp"
+                android:paddingBottom="30sp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/treadmill_information2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-20sp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/treadmill_information3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="24sp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/treadmill_information4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="18sp"
+                android:text="TextView"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+</RelativeLayout>

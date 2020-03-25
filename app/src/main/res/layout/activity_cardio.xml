@@ -16,6 +16,7 @@
         <Button
         android:layout_width="match_parent"
         android:layout_height="140dp"
+            android:text="Treadmill"
         android:id="@+id/treadmill"
             android:background="@drawable/button_shape"
             android:layout_marginBottom="10dp" />
