@@ -3,9 +3,12 @@ package com.example.stayfit;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -16,20 +19,27 @@ import com.google.firebase.database.ValueEventListener;
 import org.w3c.dom.Text;
 
 public class Curl extends AppCompatActivity {
-    TextView information;
-    TextView information1;
-    TextView information2;
-    TextView information3;
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference( "curl_1");
-    DatabaseReference myRef1 = database.getReference("curl_2");
-    DatabaseReference myRef2= database.getReference( "curl_3");
-    DatabaseReference myRef3 = database.getReference("curl_4");
+  private  VideoView viewOfVideo;
+  private  TextView information;
+  private  TextView information1;
+  private  TextView information2;
+  private  TextView information3;
+  private  FirebaseDatabase database = FirebaseDatabase.getInstance();
+  private  DatabaseReference myRef = database.getReference( "curl_1");
+  private  DatabaseReference myRef1 = database.getReference("curl_2");
+  private  DatabaseReference myRef2= database.getReference( "curl_3");
+  private  DatabaseReference myRef3 = database.getReference("curl_4");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bicepcurl);
-
+        viewOfVideo = findViewById(R.id.videoViewCurl);
+        MediaController controller = new MediaController(this);
+        controller.setAnchorView(viewOfVideo);
+        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/stayfit-5a8e7.appspot.com/o/Bicepcurls.mp4?alt=media&token=4abf9ad5-09c5-4e2b-bda3-e0bd37cb1617");
+        viewOfVideo.setMediaController(controller);
+        viewOfVideo.setVideoURI(uri);
+        viewOfVideo.start();
 
         information = (TextView) findViewById(R.id.curl_information);
         information1 = (TextView) findViewById(R.id.curl_information1);

@@ -3,10 +3,13 @@ package com.example.stayfit;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.Uri;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -18,25 +21,31 @@ import org.w3c.dom.Text;
 
 public class Chest extends AppCompatActivity {
 
-    TextView text;
-    TextView information;
-    TextView information1;
-    TextView information2;
-    TextView information3;
-    TextView information4;
-
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference("message");
-    DatabaseReference myRef2 = database.getReference("Step1");
-    DatabaseReference myRef3 = database.getReference("Step2");
-    DatabaseReference myRef4 = database.getReference("Step3");
-    DatabaseReference myRef5 = database.getReference("Step4");
-    DatabaseReference myRef6 = database.getReference("Step5");
+  private VideoView viewOfVideo;
+  private  TextView text;
+  private  TextView information;
+  private  TextView information1;
+  private  TextView information2;
+  private  TextView information3;
+  private  TextView information4;
+  private  FirebaseDatabase database = FirebaseDatabase.getInstance();
+  private  DatabaseReference myRef = database.getReference("message");
+  private  DatabaseReference myRef2 = database.getReference("Step1");
+  private  DatabaseReference myRef3 = database.getReference("Step2");
+  private  DatabaseReference myRef4 = database.getReference("Step3");
+  private  DatabaseReference myRef5 = database.getReference("Step4");
+  private  DatabaseReference myRef6 = database.getReference("Step5");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chest);
-
+    viewOfVideo = findViewById(R.id.videoViewChest);
+    MediaController controller = new MediaController(this);
+    controller.setAnchorView(viewOfVideo);
+    Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/stayfit-5a8e7.appspot.com/o/bench%20press.mp4?alt=media&token=ac747fd2-6467-49e8-b7c8-9fecfcec434e");
+    viewOfVideo.setMediaController(controller);
+    viewOfVideo.setVideoURI(uri);
+    viewOfVideo.start();
     text = (TextView)findViewById(R.id.msgTxt);
     information = (TextView) findViewById(R.id.information);
     information1 =(TextView) findViewById(R.id.information1);

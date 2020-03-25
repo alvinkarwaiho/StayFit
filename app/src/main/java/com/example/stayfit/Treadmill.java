@@ -25,29 +25,28 @@ import com.google.firebase.database.ValueEventListener;
 import java.net.URI;
 
 public class Treadmill extends AppCompatActivity {
-    TextView treadmillInfoOne;
-    TextView treadmillInfoTwo;
-    TextView treadmillInfoThree;
-    TextView treadmillInfoFour;
-    TextView treadmillInfoFive;
-    VideoView viewOfVideo;
+ private  VideoView viewOfVideo;
+ private  TextView treadmillInfoOne;
+ private  TextView treadmillInfoTwo;
+ private  TextView treadmillInfoThree;
+ private  TextView treadmillInfoFour;
+ private  TextView treadmillInfoFive;
 
-    YouTubePlayer.OnInitializedListener intialisedClicker;
-    FirebaseDatabase  database = FirebaseDatabase.getInstance();
-    DatabaseReference treadmillone  =  database.getReference( "Treadmill_1");
-    DatabaseReference treadmilltwo  =  database.getReference( "Treadmill_2");
-    DatabaseReference treadmillthree= database.getReference( "Treadmill_3");
-    DatabaseReference treadmillfour =  database.getReference( "Treadmill_4");
-    DatabaseReference treadmillfive = database.getReference( "Treadmill_5");
+ private  FirebaseDatabase  database = FirebaseDatabase.getInstance();
+ private  DatabaseReference treadmillone  =  database.getReference( "Treadmill_1");
+ private  DatabaseReference treadmilltwo  =  database.getReference( "Treadmill_2");
+ private  DatabaseReference treadmillthree= database.getReference( "Treadmill_3");
+ private  DatabaseReference treadmillfour =  database.getReference( "Treadmill_4");
+ private  DatabaseReference treadmillfive = database.getReference( "Treadmill_5");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treadmill);
-        viewOfVideo = findViewById(R.id.videoView);
-        MediaController mc = new MediaController(this);
-        mc.setAnchorView(viewOfVideo);
+        viewOfVideo = findViewById(R.id.videoViewTreadmill);
+        MediaController controller = new MediaController(this);
+        controller.setAnchorView(viewOfVideo);
         Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/stayfit-5a8e7.appspot.com/o/treadmill.mp4?alt=media&token=a6e7e5dc-0497-458e-84f9-1d8656d402f4");
-        viewOfVideo.setMediaController(mc);
+        viewOfVideo.setMediaController(controller);
         viewOfVideo.setVideoURI(uri);
         viewOfVideo.start();
         treadmillInfoOne = (TextView) findViewById(R.id.treadmill_information);

@@ -117,7 +117,7 @@
     </ScrollView>
 
     <VideoView
-        android:id="@+id/videoView"
+        android:id="@+id/videoViewTreadmill"
         android:layout_width="match_parent"
         android:layout_height="250dp" />
 
