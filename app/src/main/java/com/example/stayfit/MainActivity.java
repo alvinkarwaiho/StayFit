@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent intent = new Intent (this, MainActivity.class);
 
-        cardio =(Button) findViewById(R.id.cardio1);
-        weightlifting = (Button) findViewById(R.id.weightlifting2);
-        features = (Button) findViewById(R.id.features);
+        cardio = findViewById(R.id.cardio1);
+        weightlifting =  findViewById(R.id.weightlifting2);
+        features =  findViewById(R.id.features);
 
         cardio.setOnClickListener(new View.OnClickListener() {
             @Override

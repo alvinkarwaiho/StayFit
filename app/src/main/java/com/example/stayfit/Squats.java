@@ -13,19 +13,19 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Squats extends AppCompatActivity {
-        TextView information;
-        TextView information1;
-        TextView information2;
-        TextView information3;
-        TextView information4;
-        TextView information5;
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference( "Squats_1");
-        DatabaseReference myRef1 = database.getReference("Squats_2");
-        DatabaseReference myRef2= database.getReference( "Squats_3");
-        DatabaseReference myRef3 = database.getReference("Squats_4");
-        DatabaseReference myRef4 = database.getReference("Squats_5");
-        DatabaseReference myRef5 = database.getReference("Squats_6");
+    private TextView information;
+    private TextView information1;
+    private TextView information2;
+    private TextView information3;
+    private TextView information4;
+    private TextView information5;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference myRef = database.getReference( "Squats_1");
+    private DatabaseReference myRef1 = database.getReference("Squats_2");
+    private DatabaseReference myRef2= database.getReference( "Squats_3");
+    private DatabaseReference myRef3 = database.getReference("Squats_4");
+    private DatabaseReference myRef4 = database.getReference("Squats_5");
+    private DatabaseReference myRef5 = database.getReference("Squats_6");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

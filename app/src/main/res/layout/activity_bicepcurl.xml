@@ -99,7 +99,7 @@
 
     <VideoView
         android:id="@+id/videoViewCurl"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="250dp" />
 
 </RelativeLayout>

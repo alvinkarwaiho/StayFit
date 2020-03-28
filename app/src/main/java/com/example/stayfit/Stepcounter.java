@@ -15,20 +15,25 @@ public class Stepcounter extends AppCompatActivity implements SensorEventListene
     SensorManager manageSensor;
     TextView info;
     TextView steps;
+
     boolean active = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stepcounter);
-        info = (TextView) findViewById(R.id.info);
+        info = findViewById(R.id.info);
         steps = (TextView) findViewById(R.id.stepCounter);
 
         manageSensor = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+
+
+
     }
     public void onResume(){
         super.onResume();
         active = true;
         Sensor count = manageSensor.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
+
 
         if(count != null){
             manageSensor.registerListener(this, count , manageSensor.SENSOR_DELAY_UI);

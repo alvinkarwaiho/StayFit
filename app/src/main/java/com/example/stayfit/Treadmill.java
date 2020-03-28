@@ -26,6 +26,7 @@ import java.net.URI;
 
 public class Treadmill extends AppCompatActivity {
  private  VideoView viewOfVideo;
+ private  MediaController controller;
  private  TextView treadmillInfoOne;
  private  TextView treadmillInfoTwo;
  private  TextView treadmillInfoThree;
@@ -43,17 +44,17 @@ public class Treadmill extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treadmill);
         viewOfVideo = findViewById(R.id.videoViewTreadmill);
-        MediaController controller = new MediaController(this);
+        controller = new MediaController(this);
         controller.setAnchorView(viewOfVideo);
         Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/stayfit-5a8e7.appspot.com/o/treadmill.mp4?alt=media&token=a6e7e5dc-0497-458e-84f9-1d8656d402f4");
         viewOfVideo.setMediaController(controller);
         viewOfVideo.setVideoURI(uri);
         viewOfVideo.start();
-        treadmillInfoOne = (TextView) findViewById(R.id.treadmill_information);
-        treadmillInfoTwo = (TextView) findViewById(R.id.treadmill_information1);
-        treadmillInfoThree = (TextView) findViewById(R.id.treadmill_information2);
-        treadmillInfoFour = (TextView) findViewById(R.id.treadmill_information3);
-        treadmillInfoFive = (TextView) findViewById(R.id.treadmill_information4);
+        treadmillInfoOne   = findViewById(R.id.treadmill_information);
+        treadmillInfoTwo   = findViewById(R.id.treadmill_information1);
+        treadmillInfoThree = findViewById(R.id.treadmill_information2);
+        treadmillInfoFour  = findViewById(R.id.treadmill_information3);
+        treadmillInfoFive  = findViewById(R.id.treadmill_information4);
 //       treadmillone.setValue("Warm Up firstly by lightly walking on the treadmill for approximately 5 mins");
 //       treadmilltwo.setValue("Have a learn about the different functions within the machine. Whether that’s the heart rate monitor, calorie burn calculator or speed that you are running at.");
 //       treadmillthree.setValue("To make it look like you are running outdoors more set the treadmill on a incline and try increasing the speed to challenge yourself.");

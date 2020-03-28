@@ -18,10 +18,12 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Dip extends AppCompatActivity {
    private VideoView viewOfVideo;
+   private MediaController controller;
    private TextView information;
    private TextView information1;
    private TextView information2;
    private TextView information3;
+
    private FirebaseDatabase database = FirebaseDatabase.getInstance();
    private DatabaseReference myRef = database.getReference("dips1");
    private DatabaseReference myRef1 = database.getReference("dips2");
@@ -31,12 +33,12 @@ public class Dip extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dip);
-        information =(TextView) findViewById(R.id.dips_information);
-        information1 =(TextView) findViewById(R.id.dips_information1);
-        information2=(TextView) findViewById(R.id.dips_information2);
-        information3=(TextView) findViewById(R.id.dips_information3);
-        viewOfVideo = findViewById(R.id.videoViewDip);
-        MediaController controller = new MediaController(this);
+        information  = findViewById(R.id.dips_information);
+        information1 = findViewById(R.id.dips_information1);
+        information2 = findViewById(R.id.dips_information2);
+        information3 = findViewById(R.id.dips_information3);
+        viewOfVideo  = findViewById(R.id.videoViewDip);
+        controller = new MediaController(this);
         controller.setAnchorView(viewOfVideo);
         Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/stayfit-5a8e7.appspot.com/o/Tricepdips.mp4?alt=media&token=552f340d-7f8c-4b1b-8c41-03c9ade4120a");
         viewOfVideo.setMediaController(controller);

@@ -22,6 +22,7 @@ import org.w3c.dom.Text;
 public class Chest extends AppCompatActivity {
 
   private VideoView viewOfVideo;
+  private MediaController controller;
   private  TextView text;
   private  TextView information;
   private  TextView information1;
@@ -40,18 +41,18 @@ public class Chest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chest);
     viewOfVideo = findViewById(R.id.videoViewChest);
-    MediaController controller = new MediaController(this);
+    controller = new MediaController(this);
     controller.setAnchorView(viewOfVideo);
     Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/stayfit-5a8e7.appspot.com/o/bench%20press.mp4?alt=media&token=ac747fd2-6467-49e8-b7c8-9fecfcec434e");
     viewOfVideo.setMediaController(controller);
     viewOfVideo.setVideoURI(uri);
     viewOfVideo.start();
-    text = (TextView)findViewById(R.id.msgTxt);
-    information = (TextView) findViewById(R.id.information);
-    information1 =(TextView) findViewById(R.id.information1);
-    information2 = (TextView) findViewById(R.id.information2);
-    information3 = (TextView) findViewById(R.id.information3);
-    information4 = (TextView) findViewById(R.id.information4);
+    text =         findViewById(R.id.msgTxt);
+    information =  findViewById(R.id.information);
+    information1 = findViewById(R.id.information1);
+    information2 = findViewById(R.id.information2);
+    information3 = findViewById(R.id.information3);
+    information4 = findViewById(R.id.information4);
 
 //        myRef.setValue("Chest Press");
 //  myRef2.setValue("Lie flat under the bar.Eyes should be placed within the front of the barbell rack");

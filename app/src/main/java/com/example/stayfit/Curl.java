@@ -24,6 +24,7 @@ public class Curl extends AppCompatActivity {
   private  TextView information1;
   private  TextView information2;
   private  TextView information3;
+  private MediaController controller;
   private  FirebaseDatabase database = FirebaseDatabase.getInstance();
   private  DatabaseReference myRef = database.getReference( "curl_1");
   private  DatabaseReference myRef1 = database.getReference("curl_2");
@@ -34,17 +35,17 @@ public class Curl extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bicepcurl);
         viewOfVideo = findViewById(R.id.videoViewCurl);
-        MediaController controller = new MediaController(this);
+        controller = new MediaController(this);
         controller.setAnchorView(viewOfVideo);
         Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/stayfit-5a8e7.appspot.com/o/Bicepcurls.mp4?alt=media&token=4abf9ad5-09c5-4e2b-bda3-e0bd37cb1617");
         viewOfVideo.setMediaController(controller);
         viewOfVideo.setVideoURI(uri);
         viewOfVideo.start();
 
-        information = (TextView) findViewById(R.id.curl_information);
-        information1 = (TextView) findViewById(R.id.curl_information1);
-        information2 = (TextView) findViewById(R.id.curl_information2);
-        information3 = (TextView) findViewById(R.id.curl_information3);
+        information  = findViewById(R.id.curl_information);
+        information1 = findViewById(R.id.curl_information1);
+        information2 = findViewById(R.id.curl_information2);
+        information3 = findViewById(R.id.curl_information3);
 
 //        myRef.setValue("Hold and stand upright holding a dumbbell with each hand wrapped around each dumbbell with arms hanging by the side.");
 //        myRef1.setValue("Make sure that your palms and elbow are facing forward. ");
