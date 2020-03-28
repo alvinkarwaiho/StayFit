@@ -20,15 +20,15 @@ public class Caloriecounter extends AppCompatActivity {
    private EditText ninthNumber;
    private TextView text;
    private Button calculate;
-   private int one;
-   private int two;
-   private int three;
-   private int four;
-   private int fifth;
-   private int sixth;
-   private int seventh;
-   private int eighth;
-   private int ninth;
+   private int one=0;
+   private int two=0;
+   private int three=0;
+   private int four=0;
+   private int fifth=0;
+   private int sixth=0;
+   private int seventh=0;
+   private int eighth=0;
+   private int ninth=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
