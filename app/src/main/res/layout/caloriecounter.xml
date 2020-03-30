@@ -14,6 +14,22 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/averageMC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="800dp"
+            android:text="averageMaleCalorie"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/averageFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="900dp"
+            android:text="averageFemaleCalorie"
+            android:textSize="24sp" />
+
+        <TextView
             android:id="@+id/food1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

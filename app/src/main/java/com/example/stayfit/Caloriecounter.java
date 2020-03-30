@@ -29,6 +29,9 @@ public class Caloriecounter extends AppCompatActivity {
    private int seventh=0;
    private int eighth=0;
    private int ninth=0;
+   private int total=0;
+   private TextView averageMC;
+   private TextView averageFC;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,9 +46,11 @@ public class Caloriecounter extends AppCompatActivity {
         seventhNumber = findViewById(R.id.editcalorie7);
         eighthNumber = findViewById(R.id.editcalorie8);
         ninthNumber = findViewById(R.id.editcalorie9);
-
+        averageMC = findViewById(R.id.averageMC);
+        averageFC = findViewById(R.id.averageFC);
         calculate = findViewById(R.id.calculate);
         text = findViewById(R.id.totalcalorie);
+
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,9 +63,22 @@ public class Caloriecounter extends AppCompatActivity {
                 seventh = Integer.parseInt(seventhNumber.getText().toString());
                 eighth  =Integer.parseInt(eighthNumber.getText().toString());
                 ninth   = Integer.parseInt(ninthNumber.getText().toString());
-                int total   = one + two + three + four + fifth + sixth + seventh + eighth +ninth;
-                text.setText(""+ String.valueOf(total));
+                total   = one + two + three + four + fifth + sixth + seventh + eighth +ninth;
+                if(total >= 2500){
+                    averageMC.setText("You reach the daily male average intake of approximately 2500 kcal");
+                }
+                else {
+                    averageMC.setText("You are below the daily male average intake of 2500 kcal");
+                }
+                if(total>= 2000 ){
+                    averageFC.setText("You reach the daily female average intake of approximately 2000 kcal");
+                }
+                else{
+                    averageFC.setText("You are below the daily female average intake of approximately 2000 kcal");
+                }
+                text.setText("" + String.valueOf(total));
             }
         });
+
     }
 }
