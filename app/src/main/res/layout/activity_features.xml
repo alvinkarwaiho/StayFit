@@ -17,14 +17,16 @@
         android:layout_height="140dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/button_shape"
-        android:text="Step Counter" />
+        android:drawableStart="@drawable/stepcounter_275x183"
+         />
         <Button
             android:id="@+id/calorieCounter"
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/button_shape"
-            android:text="Calorie Counter" />
+            android:drawableStart="@drawable/caloriecounter_275x183"
+             />
 
     </LinearLayout>
 </RelativeLayout>

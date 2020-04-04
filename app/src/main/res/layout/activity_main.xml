@@ -26,7 +26,7 @@
 
             android:drawableLeft="@drawable/cardio"
             android:text="Cardio"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/weightlifting2"
@@ -37,7 +37,7 @@
 
             android:drawableLeft="@drawable/weightlifting"
             android:text="Weightlifting"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/features"
@@ -47,7 +47,7 @@
             android:background="@drawable/button_shape"
             android:drawableLeft="@drawable/additional"
             android:text="Features"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
 

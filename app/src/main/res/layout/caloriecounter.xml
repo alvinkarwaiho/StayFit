@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="800dp"
             android:text="averageMaleCalorie"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/averageFC"
@@ -27,79 +28,89 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="900dp"
             android:text="averageFemaleCalorie"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/food1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="210dp"
+            android:layout_marginTop="205dp"
             android:text="Food 1"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/food2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="260dp"
+            android:layout_marginTop="255dp"
             android:text="Food 2"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/food3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="305dp"
             android:text="Food 3"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/food4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="355dp"
             android:text="Food 4"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/food5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="410dp"
+            android:layout_marginTop="405dp"
             android:text="Food 5"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/food6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="460dp"
+            android:layout_marginTop="455dp"
             android:text="Food 6"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/food7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="510dp"
+            android:layout_marginTop="505dp"
             android:text="Food 7"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/food8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="560dp"
+            android:layout_marginTop="555dp"
             android:text="Food 8"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/food9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="610dp"
+            android:layout_marginTop="605dp"
             android:text="Food 9"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/calorie"
@@ -108,7 +119,8 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="650dp"
             android:text="Calorie:"
-            android:textSize="36sp" />
+            android:textSize="36sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -119,9 +131,11 @@
         <EditText
             android:id="@+id/editcalorie1"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="200dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             android:text="0"
@@ -131,9 +145,11 @@
         <EditText
             android:id="@+id/editcalorie2"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="250dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             android:text="0"
@@ -143,9 +159,11 @@
         <EditText
             android:id="@+id/editcalorie3"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="300dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             android:text="0"
@@ -155,9 +173,11 @@
         <EditText
             android:id="@+id/editcalorie4"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="350dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             android:text="0"
@@ -167,9 +187,11 @@
         <EditText
             android:id="@+id/editcalorie5"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="400dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             android:text="0"
@@ -179,9 +201,11 @@
         <EditText
             android:id="@+id/editcalorie6"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="450dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             android:text="0"
@@ -191,9 +215,11 @@
         <EditText
             android:id="@+id/editcalorie7"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="500dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             android:text="0"
@@ -203,9 +229,11 @@
         <EditText
             android:id="@+id/editcalorie8"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="550dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             android:text="0"
@@ -215,9 +243,11 @@
         <EditText
             android:id="@+id/editcalorie9"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="600dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="number"
             android:text="0"
@@ -232,6 +262,7 @@
             android:layout_marginTop="725dp"
             android:background="@drawable/button_shape"
             android:text="Calculate"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="92dp"
             tools:layout_editor_absoluteY="442dp" />
 
@@ -244,87 +275,97 @@
             android:layout_marginTop="650dp"
             android:text="0"
             android:textSize="36sp"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="104dp"
             tools:layout_editor_absoluteY="371dp" />
 
         <EditText
             android:id="@+id/editfood1"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="200dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editfood2"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="250dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editfood3"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="300dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editfood4"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="350dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editfood5"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="400dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editfood6"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="450dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editfood7"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="500dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editfood8"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="550dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editfood9"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginLeft="90dp"
             android:layout_marginTop="600dp"
+            android:background="@drawable/textbox"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -335,7 +376,8 @@
             android:layout_marginLeft="90dp"
             android:layout_marginTop="130dp"
             android:text="Please enter food"
-            android:textSize="26sp" />
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView4"
@@ -344,7 +386,8 @@
             android:layout_marginLeft="300dp"
             android:layout_marginTop="130dp"
             android:text="Calories (Kcal)"
-            android:textSize="26sp" />
+            android:textSize="26sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
