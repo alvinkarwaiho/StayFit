@@ -1,10 +1,14 @@
 package com.example.stayfit;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.TextView;
@@ -23,7 +27,8 @@ public class Dip extends AppCompatActivity {
    private TextView information1;
    private TextView information2;
    private TextView information3;
-
+   private Button alert;
+   private TextView textAlert;
    private FirebaseDatabase database = FirebaseDatabase.getInstance();
    private DatabaseReference myRef = database.getReference("dips1");
    private DatabaseReference myRef1 = database.getReference("dips2");
@@ -33,6 +38,28 @@ public class Dip extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dip);
+        dipHome();
+        alert = findViewById(R.id.alertdip);
+        textAlert = findViewById(R.id.alertokdip);
+        alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Dip.this);
+                build.setCancelable(true);
+                build.setTitle("Did you know?");
+                build.setMessage("Dips benefit the triceps and releases the triceps throughout the upper arm well. A sport that requires great action to pull will be useful.");
+
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        textAlert.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
+
+
         information  = findViewById(R.id.dips_information);
         information1 = findViewById(R.id.dips_information1);
         information2 = findViewById(R.id.dips_information2);
@@ -97,5 +124,18 @@ public class Dip extends AppCompatActivity {
    });
     }
 
+    public void dipHome(){
+        Button home = findViewById(R.id.homeDip);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                homePage();
+            }
+        });
 
+    }
+    public void homePage(){
+        Intent intent = new Intent(this, MainActivity.class );
+        startActivity(intent);
+    }
 }

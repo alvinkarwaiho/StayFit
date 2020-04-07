@@ -1,10 +1,14 @@
 package com.example.stayfit;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.TextView;
@@ -19,7 +23,10 @@ import com.google.firebase.database.ValueEventListener;
 import org.w3c.dom.Text;
 
 public class Curl extends AppCompatActivity {
+
   private  VideoView viewOfVideo;
+  private Button alert;
+  private TextView textAlert;
   private  TextView information;
   private  TextView information1;
   private  TextView information2;
@@ -34,6 +41,27 @@ public class Curl extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bicepcurl);
+        curlHome();
+        alert= findViewById(R.id.alertcurl);
+        textAlert = findViewById(R.id.alertokcurl);
+        alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Curl.this);
+                build.setCancelable(true);
+                build.setTitle("Did you know?");
+                build.setMessage("Bicep works the upper arm and muscles are used mostly in daily life to pick something up.");
+
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        textAlert.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
+
         viewOfVideo = findViewById(R.id.videoViewCurl);
         controller = new MediaController(this);
         controller.setAnchorView(viewOfVideo);
@@ -47,10 +75,10 @@ public class Curl extends AppCompatActivity {
         information2 = findViewById(R.id.curl_information2);
         information3 = findViewById(R.id.curl_information3);
 
-//        myRef.setValue("Hold and stand upright holding a dumbbell with each hand wrapped around each dumbbell with arms hanging by the side.");
-//        myRef1.setValue("Make sure that your palms and elbow are facing forward. ");
-//        myRef2.setValue("Exhale as you curl the weights up to the shoulder level whilst also contracting the biceps");
-//        myRef3.setValue("Repeat this movement for 2 sets of 12 reps.");
+        myRef.setValue("Hold and stand upright holding a dumbbell with each hand wrapped around each dumbbell with arms hanging by the side.");
+        myRef1.setValue("Make sure that your palms and elbow are facing forward. ");
+        myRef2.setValue("Exhale as you curl the weights up to the shoulder level whilst also contracting the biceps");
+        myRef3.setValue("Repeat this movement for 2 sets of 12 reps.");
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -99,5 +127,19 @@ public class Curl extends AppCompatActivity {
 
             }
         });
+    }
+    public void curlHome(){
+        Button home = findViewById(R.id.homeBicepCurl);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                homePage();
+            }
+        });
+
+    }
+    public void homePage(){
+        Intent intent = new Intent(this, MainActivity.class );
+        startActivity(intent);
     }
 }

@@ -25,6 +25,20 @@
                 android:textSize="40sp" />
 
             <TextView
+                android:id="@+id/alertok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/information"
+
+                />
+
+            <TextView
                 android:id="@+id/treadmill_Step1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -112,7 +126,12 @@
                 android:layout_marginTop="18sp"
                 android:text="TextView"
                 android:textSize="17sp" />
-
+            <Button
+                android:id="@+id/homeTreadmill"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/house" />
         </LinearLayout>
     </ScrollView>
 

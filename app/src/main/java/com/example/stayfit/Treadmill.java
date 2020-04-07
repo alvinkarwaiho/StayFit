@@ -1,8 +1,11 @@
 package com.example.stayfit;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.nfc.Tag;
 import android.os.Bundle;
@@ -32,7 +35,8 @@ public class Treadmill extends AppCompatActivity {
  private  TextView treadmillInfoThree;
  private  TextView treadmillInfoFour;
  private  TextView treadmillInfoFive;
-
+ private Button alert;
+ private TextView textAlert;
  private  FirebaseDatabase  database = FirebaseDatabase.getInstance();
  private  DatabaseReference treadmillone  =  database.getReference( "Treadmill_1");
  private  DatabaseReference treadmilltwo  =  database.getReference( "Treadmill_2");
@@ -43,6 +47,26 @@ public class Treadmill extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treadmill);
+        treadmillHome();
+        alert = findViewById(R.id.alert);
+        textAlert = findViewById(R.id.alertok);
+        alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Treadmill.this);
+                build.setCancelable(true);
+                build.setTitle("Did you know?");
+                build.setMessage("Pros of Treadmills: Not affected by weather , Can control your pace, multi task such as listen to music, and can do it alone without any other distractions.");
+
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        textAlert.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
         viewOfVideo = findViewById(R.id.videoViewTreadmill);
         controller = new MediaController(this);
         controller.setAnchorView(viewOfVideo);
@@ -125,8 +149,20 @@ public class Treadmill extends AppCompatActivity {
 
 
     }
+    public void treadmillHome(){
+        Button home = findViewById(R.id.homeTreadmill);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                homePage();
+            }
+        });
 
-
+    }
+    public void homePage(){
+        Intent intent = new Intent(this, MainActivity.class );
+        startActivity(intent);
+    }
 
 
 }

@@ -1,9 +1,14 @@
 package com.example.stayfit;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -19,6 +24,8 @@ public class Squats extends AppCompatActivity {
     private TextView information3;
     private TextView information4;
     private TextView information5;
+    private Button alert;
+    private TextView textAlert;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference( "Squats_1");
     private DatabaseReference myRef1 = database.getReference("Squats_2");
@@ -30,7 +37,26 @@ public class Squats extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_squats);
+        squatHome();
+        alert = findViewById(R.id.alertsquats);
+        textAlert = findViewById(R.id.alertoksquats);
+        alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Squats.this);
+                build.setCancelable(true);
+                build.setTitle("Did you know?");
+                build.setMessage("Squat trains the lower body. Squats benefit the strength , such as power and endurance. Also, benefits the strength of the upper body.");
 
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        textAlert.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
         information = (TextView) findViewById(R.id.squats_information);
         information1 = (TextView) findViewById(R.id.squats_information1);
         information2 = (TextView) findViewById(R.id.squats_information2);
@@ -121,5 +147,19 @@ public class Squats extends AppCompatActivity {
 
 
 
+    }
+    public void squatHome(){
+        Button home = findViewById(R.id.homeSquats);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                homePage();
+            }
+        });
+
+    }
+    public void homePage(){
+        Intent intent = new Intent(this, MainActivity.class );
+        startActivity(intent);
     }
 }

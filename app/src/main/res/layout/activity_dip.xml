@@ -22,7 +22,17 @@
             android:layout_marginTop="250sp"
             android:text="Tricep Dips"
             android:textSize="40sp" />
+        <TextView
+            android:id="@+id/alertokdip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
+        <Button
+            android:id="@+id/alertdip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/information" />
         <TextView
             android:id="@+id/Step1"
             android:layout_width="match_parent"
@@ -98,7 +108,12 @@
             android:text="TextView"
             android:textSize="17sp" />
 
-
+        <Button
+            android:id="@+id/homeDip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/house" />
 
     </LinearLayout>
 </ScrollView>

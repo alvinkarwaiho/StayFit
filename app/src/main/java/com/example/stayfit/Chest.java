@@ -1,12 +1,17 @@
 package com.example.stayfit;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -23,6 +28,8 @@ public class Chest extends AppCompatActivity {
 
   private VideoView viewOfVideo;
   private MediaController controller;
+  private Button alert;
+  private TextView textAlert;
   private  TextView text;
   private  TextView information;
   private  TextView information1;
@@ -40,6 +47,26 @@ public class Chest extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chest);
+        chestHome();
+        alert = findViewById(R.id.alertchest);
+        textAlert = findViewById(R.id.alertokchest);
+        alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Chest.this);
+                build.setCancelable(true);
+                build.setTitle("Did you know?");
+                build.setMessage("Muscles that benefit from this exercise are as follows: Chest, triceps and shoulders. Used mainly in day to day life to push or lift up objects.");
+
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        textAlert.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
     viewOfVideo = findViewById(R.id.videoViewChest);
     controller = new MediaController(this);
     controller.setAnchorView(viewOfVideo);
@@ -136,7 +163,20 @@ public class Chest extends AppCompatActivity {
     });
     }
 
+    public void chestHome(){
+        Button home = findViewById(R.id.homeChest);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                homePage();
+            }
+        });
 
+    }
+    public void homePage(){
+        Intent intent = new Intent(this, MainActivity.class );
+        startActivity(intent);
+    }
 
 
 }

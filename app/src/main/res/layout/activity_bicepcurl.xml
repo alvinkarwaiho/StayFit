@@ -20,7 +20,17 @@
                 android:layout_marginTop="250sp"
                 android:text="Bicep Curl"
                 android:textSize="40sp" />
+            <TextView
+                android:id="@+id/alertokcurl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
+            <Button
+                android:id="@+id/alertcurl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/information" />
             <TextView
                 android:id="@+id/curl_Step1"
                 android:layout_width="match_parent"
@@ -93,6 +103,12 @@
                 android:text="TextView"
                 android:textSize="17sp" />
 
+            <Button
+                android:id="@+id/homeBicepCurl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/house" />
 
         </LinearLayout>
     </ScrollView>

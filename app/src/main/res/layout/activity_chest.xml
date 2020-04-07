@@ -23,6 +23,17 @@
             android:layout_marginTop="250sp"
             android:text="Tricep Dips"
             android:textSize="40sp" />
+            <TextView
+                android:id="@+id/alertokchest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/alertchest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/information" />
 
         <TextView
             android:id="@+id/Step1"
@@ -113,7 +124,12 @@
             android:textSize="17sp" />
 
 
-
+            <Button
+                android:id="@+id/homeChest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/house" />
 
     </LinearLayout>
     </ScrollView>
