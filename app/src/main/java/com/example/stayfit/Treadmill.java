@@ -56,7 +56,7 @@ public class Treadmill extends AppCompatActivity {
                 AlertDialog.Builder build = new AlertDialog.Builder(Treadmill.this);
                 build.setCancelable(true);
                 build.setTitle("Did you know?");
-                build.setMessage("Pros of Treadmills: Not affected by weather , Can control your pace, multi task such as listen to music, and can do it alone without any other distractions.");
+                build.setMessage("Running in general can reduce the risk of many long term illnesses ,for example, type 2 diabetes, strokes and heart diseases.");
 
                 build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
