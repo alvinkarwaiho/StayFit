@@ -27,6 +27,8 @@ public class Dip extends AppCompatActivity {
    private TextView information1;
    private TextView information2;
    private TextView information3;
+   private Button warningAlert;
+   private TextView warningText;
    private Button alert;
    private TextView textAlert;
    private FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -41,6 +43,8 @@ public class Dip extends AppCompatActivity {
         dipHome();
         alert = findViewById(R.id.alertdip);
         textAlert = findViewById(R.id.alertokdip);
+        warningAlert = findViewById(R.id.warningAlertDip);
+        warningText = findViewById(R.id.alertWarningDip);
         alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +62,23 @@ public class Dip extends AppCompatActivity {
                 build.show();
             }
         });
+        warningAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Dip.this);
+                build.setCancelable(true);
+                build.setTitle("Warning");
+                build.setMessage("To prevent injury make sure to not overtrain and work as much as you are confortable with");
 
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        warningText.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
 
         information  = findViewById(R.id.dips_information);
         information1 = findViewById(R.id.dips_information1);

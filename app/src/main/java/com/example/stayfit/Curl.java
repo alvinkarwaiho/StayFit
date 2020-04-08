@@ -31,6 +31,9 @@ public class Curl extends AppCompatActivity {
   private  TextView information1;
   private  TextView information2;
   private  TextView information3;
+  private Button warningAlert;
+
+  private TextView warningText;
   private MediaController controller;
   private  FirebaseDatabase database = FirebaseDatabase.getInstance();
   private  DatabaseReference myRef = database.getReference( "curl_1");
@@ -44,6 +47,8 @@ public class Curl extends AppCompatActivity {
         curlHome();
         alert= findViewById(R.id.alertcurl);
         textAlert = findViewById(R.id.alertokcurl);
+        warningAlert = findViewById(R.id.warningAlertCurl);
+        warningText = findViewById(R.id.alertWarningCurl);
         alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +61,23 @@ public class Curl extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         textAlert.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
+        warningAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Curl.this);
+                build.setCancelable(true);
+                build.setTitle("Warning");
+                build.setMessage("To prevent injury make sure to gradually build your way up to a confortable weight");
+
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        warningText.setVisibility(View.VISIBLE);
                     }
                 });
                 build.show();

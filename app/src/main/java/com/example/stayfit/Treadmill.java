@@ -36,6 +36,8 @@ public class Treadmill extends AppCompatActivity {
  private  TextView treadmillInfoFour;
  private  TextView treadmillInfoFive;
  private Button alert;
+ private Button warningAlert;
+ private TextView warningText;
  private TextView textAlert;
  private  FirebaseDatabase  database = FirebaseDatabase.getInstance();
  private  DatabaseReference treadmillone  =  database.getReference( "Treadmill_1");
@@ -50,6 +52,8 @@ public class Treadmill extends AppCompatActivity {
         treadmillHome();
         alert = findViewById(R.id.alert);
         textAlert = findViewById(R.id.alertok);
+        warningAlert = findViewById(R.id.warningAlertTreadmill);
+        warningText = findViewById(R.id.alertWarning);
         alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +66,23 @@ public class Treadmill extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         textAlert.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
+        warningAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Treadmill.this);
+                build.setCancelable(true);
+                build.setTitle("Warning");
+                build.setMessage("Make sure to pace yourself and don't overtrain to prevent injury.");
+
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        warningText.setVisibility(View.VISIBLE);
                     }
                 });
                 build.show();

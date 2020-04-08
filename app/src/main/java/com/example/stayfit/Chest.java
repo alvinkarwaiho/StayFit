@@ -31,6 +31,8 @@ public class Chest extends AppCompatActivity {
   private Button alert;
   private TextView textAlert;
   private  TextView text;
+  private Button warningAlert;
+  private TextView warningText;
   private  TextView information;
   private  TextView information1;
   private  TextView information2;
@@ -50,6 +52,8 @@ public class Chest extends AppCompatActivity {
         chestHome();
         alert = findViewById(R.id.alertchest);
         textAlert = findViewById(R.id.alertokchest);
+        warningAlert = findViewById(R.id.warningAlertChest);
+        warningText = findViewById(R.id.alertWarningChest);
         alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +66,23 @@ public class Chest extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         textAlert.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
+        warningAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Chest.this);
+                build.setCancelable(true);
+                build.setTitle("Warning");
+                build.setMessage("Beginners make sure you start with the bar , lifting weights safely with someone behind the bar and gradually increase the weight to prevent injury.");
+
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        warningText.setVisibility(View.VISIBLE);
                     }
                 });
                 build.show();

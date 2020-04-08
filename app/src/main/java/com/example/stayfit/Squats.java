@@ -24,6 +24,8 @@ public class Squats extends AppCompatActivity {
     private TextView information3;
     private TextView information4;
     private TextView information5;
+    private Button warningAlert;
+    private TextView warningText;
     private Button alert;
     private TextView textAlert;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -40,6 +42,8 @@ public class Squats extends AppCompatActivity {
         squatHome();
         alert = findViewById(R.id.alertsquats);
         textAlert = findViewById(R.id.alertoksquats);
+        warningAlert = findViewById(R.id.warningAlertSquats);
+        warningText = findViewById(R.id.alertWarningSquats);
         alert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +56,23 @@ public class Squats extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         textAlert.setVisibility(View.VISIBLE);
+                    }
+                });
+                build.show();
+            }
+        });
+        warningAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder build = new AlertDialog.Builder(Squats.this);
+                build.setCancelable(true);
+                build.setTitle("Warning");
+                build.setMessage("Beginners make sure you start with the bar , lifting weights safely with someone behind the bar and gradually increase the weight over time.");
+
+                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        warningText.setVisibility(View.VISIBLE);
                     }
                 });
                 build.show();
