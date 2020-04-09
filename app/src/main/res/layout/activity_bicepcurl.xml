@@ -63,7 +63,8 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp"
                 android:text="Step 1)"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/curl_Step2"
@@ -71,7 +72,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="50sp"
                 android:text="Step2)"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/curl_Step3"
@@ -79,7 +81,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="50sp"
                 android:text="Step3)"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/curl_Step4"
@@ -88,7 +91,8 @@
                 android:layout_marginTop="50sp"
                 android:paddingTop="10sp"
                 android:text="Step4)"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
 
             <TextView
