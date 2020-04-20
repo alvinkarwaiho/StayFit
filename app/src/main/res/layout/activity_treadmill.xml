@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:background="#F2FBE7">
 
             <TextView
                 android:id="@+id/msgTxt"
@@ -39,6 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="300dp"
+                android:layout_marginTop="300dp"
                 android:background="@drawable/warning" />
 
             <Button
@@ -46,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
-                android:layout_marginTop="-100dp"
+                android:layout_marginTop="300dp"
 
                 android:layout_marginRight="150dp"
                 android:background="@drawable/information" />
@@ -56,13 +57,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="0dp"
-                android:layout_marginTop="-100dp"
+                android:layout_marginTop="300dp"
                 android:background="@drawable/house" />
 
             <TextView
                 android:id="@+id/treadmill_Step1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="400dp"
                 android:paddingTop="20dp"
                 android:text="Step 1)"
                 android:textSize="20sp"
@@ -72,7 +75,8 @@
                 android:id="@+id/treadmill_Step2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="500dp"
                 android:text="Step2)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -81,7 +85,8 @@
                 android:id="@+id/treadmill_Step3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="70sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="600dp"
                 android:text="Step3)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -90,7 +95,8 @@
                 android:id="@+id/treadmill_Step4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="700dp"
                 android:paddingTop="10sp"
                 android:text="Step4)"
                 android:textSize="20sp"
@@ -100,7 +106,8 @@
                 android:id="@+id/treadmill_Step5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="800dp"
                 android:paddingTop="10sp"
                 android:text="Step5)"
                 android:textSize="20sp"
@@ -110,8 +117,13 @@
                 android:id="@+id/treadmill_information"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="-372sp"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentBottom="false"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="420dp"
                 android:paddingBottom="30sp"
                 android:text="TextView"
                 android:textSize="17sp" />
@@ -121,8 +133,8 @@
                 android:id="@+id/treadmill_information1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="5sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="500dp"
                 android:paddingBottom="30sp"
                 android:text="TextView"
                 android:textSize="17sp" />
@@ -131,8 +143,8 @@
                 android:id="@+id/treadmill_information2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="-20sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="600dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
@@ -140,8 +152,8 @@
                 android:id="@+id/treadmill_information3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="24sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="710dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
@@ -149,11 +161,11 @@
                 android:id="@+id/treadmill_information4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="18sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="810dp"
                 android:text="TextView"
                 android:textSize="17sp" />
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
 
     <VideoView

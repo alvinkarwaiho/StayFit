@@ -8,10 +8,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:background="#F2FBE7">
 
             <TextView
                 android:id="@+id/msgTxt"
@@ -20,6 +20,7 @@
                 android:layout_marginTop="250sp"
                 android:text="Bicep Curl"
                 android:textSize="40sp" />
+
             <TextView
                 android:id="@+id/alertokcurl"
                 android:layout_width="match_parent"
@@ -36,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
 
-                android:layout_marginTop="-25dp"
+                android:layout_marginTop="300dp"
                 android:layout_marginRight="150dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/information" />
@@ -46,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="300dp"
-                android:layout_marginTop="-115dp"
+                android:layout_marginTop="300dp"
                 android:layout_marginBottom="100dp"
                 android:background="@drawable/warning" />
 
@@ -54,13 +55,14 @@
                 android:id="@+id/homeBicepCurl"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="-195dp"
+                android:layout_marginTop="300dp"
                 android:background="@drawable/house" />
 
             <TextView
                 android:id="@+id/curl_Step1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
                 android:paddingTop="20dp"
                 android:text="Step 1)"
                 android:textSize="20sp"
@@ -70,7 +72,7 @@
                 android:id="@+id/curl_Step2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="500dp"
                 android:text="Step2)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -79,7 +81,7 @@
                 android:id="@+id/curl_Step3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="570dp"
                 android:text="Step3)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -88,8 +90,7 @@
                 android:id="@+id/curl_Step4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
-                android:paddingTop="10sp"
+                android:layout_marginTop="640dp"
                 android:text="Step4)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -99,9 +100,8 @@
                 android:id="@+id/curl_information"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="-265sp"
-                android:paddingBottom="30sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="423dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
@@ -110,9 +110,8 @@
                 android:id="@+id/curl_information1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="-17sp"
-                android:paddingBottom="30sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="503dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
@@ -120,8 +119,8 @@
                 android:id="@+id/curl_information2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="5sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="573dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
@@ -129,12 +128,12 @@
                 android:id="@+id/curl_information3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="20sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="643dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
 
     <VideoView

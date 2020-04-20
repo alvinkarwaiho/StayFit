@@ -52,34 +52,88 @@ public class Caloriecounter extends AppCompatActivity {
         calculate = findViewById(R.id.calculate);
         text = findViewById(R.id.totalcalorie);
 
-        calculate.setOnClickListener(new View.OnClickListener() {
+
+        firstNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                one     = Integer.parseInt(firstNumber.getText().toString());
-                two     = Integer.parseInt(secondNumber.getText().toString());
-                three   = Integer.parseInt(thirdNumber.getText().toString());
-                four    = Integer.parseInt(fourthNumber.getText().toString());
-                fifth   = Integer.parseInt(fifthNumber.getText().toString());
-                sixth   = Integer.parseInt(sixthNumber.getText().toString());
-                seventh = Integer.parseInt(seventhNumber.getText().toString());
-                eighth  =Integer.parseInt(eighthNumber.getText().toString());
-                ninth   = Integer.parseInt(ninthNumber.getText().toString());
-                total   = one + two + three + four + fifth + sixth + seventh + eighth +ninth;
-                if(total >= 2500){
-                    averageMC.setText("You reach the daily male average intake of approximately 2500 kcal");
-                }
-                else {
-                    averageMC.setText("You are below the daily male average intake of 2500 kcal");
-                }
-                if(total>= 2000 ){
-                    averageFC.setText("You reach the daily female average intake of approximately 2000 kcal");
-                }
-                else{
-                    averageFC.setText("You are below the daily female average intake of approximately 2000 kcal");
-                }
-                text.setText("" + String.valueOf(total));
+                firstNumber.setText("");
             }
         });
+        secondNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                secondNumber.setText("");
+            }
+        });
+        thirdNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                thirdNumber.setText("");
+            }
+        });
+        fourthNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fourthNumber.setText("");
+            }
+        });
+        fifthNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fifthNumber.setText("");
+            }
+        });
+        sixthNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sixthNumber.setText("");
+            }
+        });
+        seventhNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                seventhNumber.setText("");
+            }
+        });
+        eighthNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                eighthNumber.setText("");
+            }
+        });
+        ninthNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ninthNumber.setText("");
+            }
+        });
+                calculate.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        one = Integer.parseInt(firstNumber.getText().toString());
+                        two = Integer.parseInt(secondNumber.getText().toString());
+                        three = Integer.parseInt(thirdNumber.getText().toString());
+                        four = Integer.parseInt(fourthNumber.getText().toString());
+                        fifth = Integer.parseInt(fifthNumber.getText().toString());
+                        sixth = Integer.parseInt(sixthNumber.getText().toString());
+                        seventh = Integer.parseInt(seventhNumber.getText().toString());
+                        eighth = Integer.parseInt(eighthNumber.getText().toString());
+                        ninth = Integer.parseInt(ninthNumber.getText().toString());
+                        total = one + two + three + four + fifth + sixth + seventh + eighth + ninth;
+                        if (total >= 2500) {
+                            averageMC.setText("You reach the daily male average intake of approximately 2500 kcal");
+                        } else {
+                            averageMC.setText("You are below the daily male average intake of 2500 kcal");
+                        }
+                        if (total >= 2000) {
+                            averageFC.setText("You reach the daily female average intake of approximately 2000 kcal");
+                        } else {
+                            averageFC.setText("You are below the daily female average intake of approximately 2000 kcal");
+                        }
+                        text.setText("" + String.valueOf(total));
+                    }
+                });
 
     }
     public void calorieHome(){
@@ -96,4 +150,6 @@ public class Caloriecounter extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class );
         startActivity(intent);
     }
+
+
 }

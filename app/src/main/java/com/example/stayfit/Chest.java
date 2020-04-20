@@ -113,6 +113,7 @@ public class Chest extends AppCompatActivity {
         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
             String value2 = dataSnapshot.getValue(String.class);
            information.setText(value2);
+           System.out.println(value2);
         }
 
         @Override

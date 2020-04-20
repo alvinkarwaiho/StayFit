@@ -12,10 +12,11 @@
         android:layout_height="match_parent"
         android:minHeight="10000dp"
         >
-        <LinearLayout
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:background="#F2FBE7">
 
             <TextView
                 android:id="@+id/msgTxt"
@@ -24,6 +25,7 @@
                 android:layout_marginTop="250sp"
                 android:text="Chest Press"
                 android:textSize="40sp" />
+
             <TextView
                 android:id="@+id/alertokchest"
                 android:layout_width="match_parent"
@@ -39,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="300dp"
-                android:layout_marginTop="-20dp"
+                android:layout_marginTop="300dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/warning" />
 
@@ -48,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
-                android:layout_marginTop="-110dp"
+                android:layout_marginTop="300dp"
                 android:layout_marginRight="150dp"
                 android:layout_marginBottom="45dp"
                 android:background="@drawable/information" />
@@ -57,13 +59,14 @@
                 android:id="@+id/homeChest"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="-140dp"
+                android:layout_marginTop="300dp"
                 android:background="@drawable/house" />
 
             <TextView
                 android:id="@+id/Step1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
                 android:paddingTop="20dp"
                 android:text="Step 1)"
                 android:textSize="20sp"
@@ -73,7 +76,7 @@
                 android:id="@+id/Step2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="500dp"
                 android:text="Step2)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -82,7 +85,7 @@
                 android:id="@+id/Step3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="570dp"
                 android:text="Step3)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -91,8 +94,7 @@
                 android:id="@+id/Step4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="100sp"
-                android:paddingTop="10sp"
+                android:layout_marginTop="680dp"
                 android:text="Step4)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -101,61 +103,59 @@
                 android:id="@+id/Step5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="90sp"
+                android:layout_marginTop="800dp"
                 android:text="Step5)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/information"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70sp"
-            android:layout_marginTop="-430sp"
-            android:paddingBottom="30sp"
-            android:text="TextView"
-            android:textSize="17sp" />
+            <TextView
+                android:id="@+id/information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="420dp"
+                android:text="TextView"
+                android:textSize="17sp" />
 
 
-        <TextView
-            android:id="@+id/information1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70sp"
-            android:layout_marginTop="0sp"
-            android:paddingBottom="30sp"
-            android:text="TextView"
-            android:textSize="17sp" />
+            <TextView
+                android:id="@+id/information1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="500dp"
+                android:text="TextView"
+                android:textSize="17sp" />
 
-        <TextView
-            android:id="@+id/information2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70sp"
-            android:layout_marginTop="5sp"
-            android:text="TextView"
-            android:textSize="17sp" />
+            <TextView
+                android:id="@+id/information2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="570dp"
+                android:text="TextView"
+                android:textSize="17sp" />
 
-        <TextView
-            android:id="@+id/information3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70sp"
-            android:layout_marginTop="35sp"
-            android:text="TextView"
-            android:textSize="17sp" />
+            <TextView
+                android:id="@+id/information3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="680dp"
+                android:text="TextView"
+                android:textSize="17sp" />
 
-        <TextView
-            android:id="@+id/information4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70sp"
-            android:layout_marginTop="10sp"
-            android:text="TextView"
-            android:textSize="17sp" />
+            <TextView
+                android:id="@+id/information4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="800dp"
+                android:text="TextView"
+                android:textSize="17sp" />
 
 
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
     <VideoView
         android:id="@+id/videoViewChest"

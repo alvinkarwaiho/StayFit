@@ -9,12 +9,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:minHeight="10000dp"
         >
-        <LinearLayout
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:background="#F2FBE7">
 
             <TextView
                 android:id="@+id/msgTxt"
@@ -39,6 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="300dp"
+                android:layout_marginTop="300dp"
                 android:background="@drawable/warning" />
 
             <Button
@@ -46,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
-                android:layout_marginTop="-100dp"
+                android:layout_marginTop="300dp"
                 android:layout_marginRight="150dp"
                 android:layout_marginBottom="100dp"
                 android:background="@drawable/information" />
@@ -55,13 +56,14 @@
                 android:id="@+id/homeSquats"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="-200dp"
+                android:layout_marginTop="300dp"
                 android:background="@drawable/house" />
 
             <TextView
                 android:id="@+id/squats_Step1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
                 android:paddingTop="20dp"
                 android:text="Step 1)"
                 android:textSize="20sp"
@@ -71,7 +73,7 @@
                 android:id="@+id/squats_Step2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="500dp"
                 android:text="Step2)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -80,7 +82,7 @@
                 android:id="@+id/squats_Step3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="70sp"
+                android:layout_marginTop="600dp"
                 android:text="Step3)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -89,7 +91,7 @@
                 android:id="@+id/squats_Step4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="700dp"
                 android:paddingTop="10sp"
                 android:text="Step4)"
                 android:textSize="20sp"
@@ -99,7 +101,7 @@
                 android:id="@+id/squats_Step5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="50sp"
+                android:layout_marginTop="800dp"
                 android:text="Step5)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -108,7 +110,7 @@
                 android:id="@+id/squats_Step6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="40sp"
+                android:layout_marginTop="870dp"
                 android:text="Step6)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -117,8 +119,8 @@
                 android:id="@+id/squats_information"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="-425sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="420dp"
                 android:paddingBottom="30sp"
                 android:text="TextView"
                 android:textSize="17sp" />
@@ -128,8 +130,8 @@
                 android:id="@+id/squats_information1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="-20sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="500dp"
                 android:paddingBottom="30sp"
                 android:text="TextView"
                 android:textSize="17sp" />
@@ -138,8 +140,8 @@
                 android:id="@+id/squats_information2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="-15sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="600dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
@@ -147,8 +149,8 @@
                 android:id="@+id/squats_information3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="20sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="710dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
@@ -156,8 +158,8 @@
                 android:id="@+id/squats_information4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="20sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="800dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
@@ -165,13 +167,13 @@
                 android:id="@+id/squats_information5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="35sp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="870dp"
                 android:text="TextView"
                 android:textSize="17sp" />
 
 
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
 
 </RelativeLayout>
