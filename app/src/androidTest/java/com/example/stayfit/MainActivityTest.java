@@ -1,7 +1,10 @@
 package com.example.stayfit;
 
+import android.widget.Button;
 
-import android.app.Instrumentation;
+import androidx.annotation.ContentView;
+
+import junit.framework.TestCase;
 
 import org.junit.After;
 import org.junit.Before;
@@ -9,32 +12,17 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MainActivityTest {
+public class MainActivityTest extends TestCase {
+    MainActivity activity;
 
-    @Before
-    public void setUp() throws Exception {
+   @Test
+    public void test(){
+       final Button button= activity.findViewById(R.id.cardio1);
+        assertTrue(button);
+        Expresso
+   }
+
+    private void assertTrue(Button button) {
     }
 
-    @After
-    public void tearDown() throws Exception {
-    }
-
-    @Test
-    public void onCreate() {
-        Instrumentation.ActivityMonitor am;
-        am = getInstrumentation.addMonitor();
-    }
-
-    @Test
-    public void cardio() {
-
-    }
-
-    @Test
-    public void weightlifting() {
-    }
-
-    @Test
-    public void features() {
-    }
 }

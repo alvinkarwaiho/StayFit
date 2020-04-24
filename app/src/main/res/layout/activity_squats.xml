@@ -74,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="500dp"
+                android:paddingTop="15dp"
                 android:text="Step2)"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -132,6 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="75dp"
                 android:layout_marginTop="500dp"
+                android:paddingTop="15dp"
                 android:paddingBottom="30sp"
                 android:text="TextView"
                 android:textSize="17sp" />
@@ -171,6 +173,13 @@
                 android:layout_marginTop="870dp"
                 android:text="TextView"
                 android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="970dp"
+                android:text="Reference" />
 
 
         </RelativeLayout>

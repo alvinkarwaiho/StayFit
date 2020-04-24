@@ -9,8 +9,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            app:srcCompat="@drawable/numberOfSteps" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -18,14 +24,32 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/stepcounter" />
 
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            app:srcCompat="@drawable/lastSavedSteps" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="75dp"
+            app:srcCompat="@drawable/save" />
+
         <TextView
-            android:id="@+id/info"
+            android:id="@+id/info2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="450dp"
-            android:text="Number of Steps"
-            android:textSize="36sp" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="500dp"
+            android:text="0"
+            android:textSize="50dp" />
 
     </RelativeLayout>
 
@@ -38,5 +62,18 @@
         android:layout_marginTop="300dp"
         android:text="0"
         android:textSize="50dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="100dp"
+        android:background="#8BC34A"
+        android:clickable="true"
+        app:backgroundTint="#8BC34A"
+        app:srcCompat="@drawable/ic_save_black_24dp" />
 
 </RelativeLayout>

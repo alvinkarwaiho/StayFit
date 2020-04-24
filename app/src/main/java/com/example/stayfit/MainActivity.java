@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    private Button cardio;
+    protected Button cardio;
     private Button weightlifting;
     private Button features;
     @Override
