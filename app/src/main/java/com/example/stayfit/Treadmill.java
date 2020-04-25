@@ -100,11 +100,11 @@ public class Treadmill extends AppCompatActivity {
         treadmillInfoThree = findViewById(R.id.treadmill_information2);
         treadmillInfoFour  = findViewById(R.id.treadmill_information3);
         treadmillInfoFive  = findViewById(R.id.treadmill_information4);
-//       treadmillone.setValue("Warm Up firstly by lightly walking on the treadmill for approximately 5 mins");
-//       treadmilltwo.setValue("Have a learn about the different functions within the machine. Whether that’s the heart rate monitor, calorie burn calculator or speed that you are running at.");
-//       treadmillthree.setValue("To make it look like you are running outdoors more set the treadmill on a incline and try increasing the speed to challenge yourself.");
-//       treadmillfour.setValue("Make sure you don’t hold onto the handrail and make sure posture straight also don’t lean forward.");
-//       treadmillfive.setValue("Once finish lower the incline or speed down and slowly warm down. ");
+//         treadmillone.setValue("Warm Up first, by lightly walking on the treadmill for approximately 5 mins.");
+//        treadmilltwo.setValue("Have a learn about the different functions within the machine. Whether that’s the heart rate monitor, calorie burn calculator or speed that you are running at.");
+//        treadmillthree.setValue("To make it look like you are running outdoors more set the treadmill on a incline and try increasing the speed to challenge yourself.");
+//        treadmillfour.setValue("Make sure you don’t hold onto the handrail and make sure posture straight as well as not leaning forward to prevent injury.");
+//        treadmillfive.setValue("Once finished gradually decrease the speed down and slowly warm down.");
 
         treadmillone.addValueEventListener(new ValueEventListener() {
        @Override

@@ -85,12 +85,12 @@ public class Squats extends AppCompatActivity {
         information4 = (TextView) findViewById(R.id.squats_information4);
         information5 = (TextView) findViewById(R.id.squats_information5);
 
-//        myRef.setValue("Maintain a wide stance and place your feet a shoulder width apart under the bar, making sure that you do not use the heels or toes.");
-//        myRef1.setValue("Bend the knees slowly, and making sure that you look right forward, ensure that you do not lean forward at any time to prevent injury. ");
+//        myRef.setValue("Maintain a wide stance and place your feet a shoulder width apart under the bar. Ensure that you do not use the heels or toes.");
+//        myRef1.setValue("Bend the knees slowly making sure that you look forward. To prevent injury make sure you do not lean forward at any time. ");
 //        myRef2.setValue("Always make sure that you maintain a slow and controlled muscle tension and inhale when lower.");
 //        myRef3.setValue("Return slowly towards the starting position and back and hip below the bar. Exhale as you return to the standing position.");
-//        myRef4.setValue("Repeat 3 sets of 6 to 10 squats");
-//        myRef5.setValue("Once exercise finished place the bar carefully back to the rack with the bar still on you double check left and right the bar is back on the rack.");
+//        myRef4.setValue("Repeat this exercise for 3 sets of 6 ");
+//        myRef5.setValue("Once exercise finished place the bar carefully back on the rack with the bar still on you. To prevent injury double check left and right the bar is back on the rack before removing this.");
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override

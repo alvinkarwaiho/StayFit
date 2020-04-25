@@ -101,13 +101,13 @@ public class Chest extends AppCompatActivity {
     information2 = findViewById(R.id.information2);
     information3 = findViewById(R.id.information3);
     information4 = findViewById(R.id.information4);
-
-//        myRef.setValue("Chest Press");
-//  myRef2.setValue("Lie flat under the bar.Eyes should be placed within the front of the barbell rack");
+//
+//    myRef.setValue("Chest Press");
+//  myRef2.setValue("Lie flat under the bar. Eyes should be placed within the front of the barbell rack");
 //  myRef3.setValue("Keeping feet relatively wide apart and flat on the floor");
-//  myRef4.setValue("Hold the bar firmly and outside using a closed fist and ensuring that the shoulder is a shoulder width apart from the grop and that the arms is 45 degrees apart from the body.");
-//  myRef5.setValue("Ensure that you take a deep breath and lift the bar above the chest with arms extended, and as you push upwards exhale.Not only this ensure you keep focus on the ceiling than the bar to prevent injury.");
-//  myRef6.setValue("Once exercise is done return the bar towards the rack and repeat this exercise for 5 sets and 5 repetitions to achieve strength.");
+//  myRef4.setValue("Hold the bar firmly and outside using a closed fist and ensuring that the shoulder is a shoulder width apart. Also ensure that the arms is 45 degrees apart from the body.");
+//  myRef5.setValue("Ensure that you take a deep breath and lift the bar above the chest with arms extended, and as you push upwards exhale. In addition to this ensure you keep focus on the ceiling than the bar to prevent injury.");
+//  myRef6.setValue("Once exercise is done return the bar towards the rack and repeat this exercise for 5 sets and 5 repetitions.");
     myRef2.addValueEventListener(new ValueEventListener() {
         @Override
         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="200dp"
-            app:srcCompat="@drawable/numberOfSteps" />
+            app:srcCompat="@drawable/numberofsteps" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -29,17 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="400dp"
-            app:srcCompat="@drawable/lastSavedSteps" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginRight="100dp"
-            android:layout_marginBottom="75dp"
-            app:srcCompat="@drawable/save" />
+            app:srcCompat="@drawable/lastsavedsteps" />
 
         <TextView
             android:id="@+id/info2"
@@ -51,29 +41,29 @@
             android:text="0"
             android:textSize="50dp" />
 
+
+        <TextView
+            android:id="@+id/steps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:text="0"
+            android:textSize="50dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="540dp"
+            android:layout_marginRight="35dp"
+            android:background="#8BC34A"
+            android:clickable="true"
+            app:backgroundTint="#8BC34A"
+            app:srcCompat="@drawable/ic_save_black_24dp" />
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/steps"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="300dp"
-        android:text="0"
-        android:textSize="50dp" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/saveButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="100dp"
-        android:background="#8BC34A"
-        android:clickable="true"
-        app:backgroundTint="#8BC34A"
-        app:srcCompat="@drawable/ic_save_black_24dp" />
 
 </RelativeLayout>

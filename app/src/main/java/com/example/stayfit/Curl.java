@@ -97,11 +97,11 @@ public class Curl extends AppCompatActivity {
         information2 = findViewById(R.id.curl_information2);
         information3 = findViewById(R.id.curl_information3);
 
-        myRef.setValue("Hold and stand upright holding a dumbbell with each hand wrapped around each dumbbell with arms hanging by the side.");
-        myRef1.setValue("Make sure that your palms and elbow are facing forward. ");
-        myRef2.setValue("Exhale as you curl the weights up to the shoulder level whilst also contracting the biceps");
-        myRef3.setValue("Repeat this movement for 2 sets of 12 reps.");
-        myRef.addValueEventListener(new ValueEventListener() {
+//        myRef.setValue("Hold and stand upright holding a dumbbell with each hand wrapped around each dumbbell with arms hanging by the side.");
+//        myRef1.setValue("Make sure that your palms and elbows are facing forward. ");
+//        myRef2.setValue("Exhale as you curl the weights up to the shoulder level whilst also contracting the biceps.");
+//        myRef3.setValue("Repeat this exercise for 2 sets of 12 reps.");
+          myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String value = dataSnapshot.getValue(String.class);
