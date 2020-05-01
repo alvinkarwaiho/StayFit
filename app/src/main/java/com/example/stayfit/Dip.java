@@ -51,7 +51,7 @@ public class Dip extends AppCompatActivity {
                 AlertDialog.Builder build = new AlertDialog.Builder(Dip.this);
                 build.setCancelable(true);
                 build.setTitle("Did you know?");
-                build.setMessage("Dips benefit the triceps and releases the triceps throughout the upper arm well. A sport that requires great action to pull will be useful.");
+                build.setMessage("Dips benefit the triceps and releases the triceps throughout the upper arm well. A sport that requires great action to pull benefits from this.");
 
                 build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override

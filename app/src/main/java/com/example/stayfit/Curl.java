@@ -55,7 +55,7 @@ public class Curl extends AppCompatActivity {
                 AlertDialog.Builder build = new AlertDialog.Builder(Curl.this);
                 build.setCancelable(true);
                 build.setTitle("Did you know?");
-                build.setMessage("Bicep works the upper arm and muscles are used mostly in daily life to pick something up.");
+                build.setMessage("Bicep works the upper arm and muscles are used mostly in daily life to pick objects up.");
 
                 build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override

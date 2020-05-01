@@ -65,6 +65,7 @@ public class Chest extends AppCompatActivity {
                 build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+
                         textAlert.setVisibility(View.VISIBLE);
                     }
                 });
@@ -83,6 +84,7 @@ public class Chest extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         warningText.setVisibility(View.VISIBLE);
+
                     }
                 });
                 build.show();

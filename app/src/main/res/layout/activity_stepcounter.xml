@@ -19,12 +19,6 @@
             app:srcCompat="@drawable/numberofsteps" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="400dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/stepcounter" />
-
-        <ImageView
             android:id="@+id/imageView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,12 +27,12 @@
 
         <TextView
             android:id="@+id/info2"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="320dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="195dp"
             android:layout_marginTop="500dp"
-            android:text="0"
+            android:hint="0"
             android:textSize="50dp" />
 
 
@@ -48,6 +42,7 @@
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="300dp"
+            android:hint="0"
             android:text="0"
             android:textSize="50dp" />
 
@@ -63,6 +58,12 @@
             android:clickable="true"
             app:backgroundTint="#8BC34A"
             app:srcCompat="@drawable/ic_save_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/stepcounter" />
     </RelativeLayout>
 
 

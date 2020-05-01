@@ -56,6 +56,7 @@ public class Caloriecounter extends AppCompatActivity {
         firstNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 firstNumber.setText("");
             }
         });

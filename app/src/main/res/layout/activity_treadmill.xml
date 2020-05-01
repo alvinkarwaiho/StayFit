@@ -173,7 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="910dp"
-                android:text="Reference : " />
+                android:text="Reference : https://www.verywellfit.com/tips-for-treadmill-running-2911986" />
         </RelativeLayout>
     </ScrollView>
 

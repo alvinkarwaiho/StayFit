@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="740dp"
-                android:text="Reference:" />
+                android:text="Reference: https://www.verywellfit.com/how-to-do-the-biceps-arm-curl-3498604" />
 
         </RelativeLayout>
     </ScrollView>

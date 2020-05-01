@@ -40,6 +40,7 @@ public class Stepcounter extends AppCompatActivity {
     private double size;
     private double sizeDelta;
     private String save;
+    private String information;
 
     private FloatingActionButton saveButton;
 
@@ -49,6 +50,7 @@ public class Stepcounter extends AppCompatActivity {
         setContentView(R.layout.activity_stepcounter);
         info = findViewById(R.id.info2);
         open("stepcounter.txt");
+        info.setText(information);
         steps = findViewById(R.id.steps);
         SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -104,7 +106,7 @@ public class Stepcounter extends AppCompatActivity {
         return save;
     }
     public String open(final String name) {
-        String information="";
+         information="";
         try{
         InputStream open = openFileInput(name);
         InputStreamReader inputStreamReader = new InputStreamReader(open);
@@ -121,7 +123,7 @@ public class Stepcounter extends AppCompatActivity {
         catch(IOException io ){
             io.printStackTrace();
         }
-        info.setText(information);
+  //      info.setText(information);
         return information;
     }
 
