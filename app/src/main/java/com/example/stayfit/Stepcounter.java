@@ -94,9 +94,9 @@ public class Stepcounter extends AppCompatActivity {
             public void onClick(View v) {
 
                 try {
-                    OutputStreamWriter o = new OutputStreamWriter(openFileOutput(name, 0));
-                    o.write(save);
-                    o.close();
+                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput(name, 0));
+                    outputStreamWriter.write(save);
+                    outputStreamWriter.close();
                 } catch (IOException io) {
                     io.printStackTrace();
                 }

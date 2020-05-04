@@ -18,23 +18,23 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Squats extends AppCompatActivity {
-    private TextView information;
-    private TextView information1;
-    private TextView information2;
-    private TextView information3;
-    private TextView information4;
-    private TextView information5;
-    private Button warningAlert;
-    private TextView warningText;
-    private Button alert;
-    private TextView textAlert;
-    private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private DatabaseReference myRef = database.getReference( "Squats_1");
-    private DatabaseReference myRef1 = database.getReference("Squats_2");
-    private DatabaseReference myRef2= database.getReference( "Squats_3");
-    private DatabaseReference myRef3 = database.getReference("Squats_4");
-    private DatabaseReference myRef4 = database.getReference("Squats_5");
-    private DatabaseReference myRef5 = database.getReference("Squats_6");
+    protected TextView information;
+    protected TextView information1;
+    protected TextView information2;
+    protected TextView information3;
+    protected TextView information4;
+    protected TextView information5;
+    protected Button warningAlert;
+    protected TextView warningText;
+    protected Button alert;
+    protected TextView textAlert;
+    protected FirebaseDatabase database = FirebaseDatabase.getInstance();
+    protected DatabaseReference myRef = database.getReference( "Squats_1");
+    protected DatabaseReference myRef1 = database.getReference("Squats_2");
+    protected DatabaseReference myRef2= database.getReference( "Squats_3");
+    protected DatabaseReference myRef3 = database.getReference("Squats_4");
+    protected DatabaseReference myRef4 = database.getReference("Squats_5");
+    protected DatabaseReference myRef5 = database.getReference("Squats_6");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

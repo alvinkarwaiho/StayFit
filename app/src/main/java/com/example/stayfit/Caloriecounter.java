@@ -111,7 +111,6 @@ public class Caloriecounter extends AppCompatActivity {
                 calculate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
                         one = Integer.parseInt(firstNumber.getText().toString());
                         two = Integer.parseInt(secondNumber.getText().toString());
                         three = Integer.parseInt(thirdNumber.getText().toString());
